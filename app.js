@@ -1,3 +1,4 @@
+// https://www.sitepoint.com/delay-sleep-pause-wait/
 function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
@@ -55,6 +56,16 @@ $('body').terminal({
     // exit
     exit: function () {
         close();
+        sleep(10);
+        sleep(10);
+        sleep(10);
+        sleep(10);
+        sleep(10);
+        sleep(10);
+        sleep(10);
+        sleep(10);
+        sleep(10);
+        sleep(10);
         sleep(2000);
         this.echo("If you still see this line, oh well... It doesn't work sometime.");
     }
