@@ -36,5 +36,5 @@ $('body').terminal({
         );
     }
 }, {
-    greetings: 'Welcome to rock-on profile! Type "help" to view all commands.'
+    greetings: "Welcome to rock-on's profile! Type 'help' to view all commands."
 });
