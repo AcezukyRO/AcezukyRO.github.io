@@ -1,21 +1,10 @@
-var Timer = function(callback, delay) {
-    var timerId, start, remaining = delay;
-
-    this.pause = function() {
-        window.clearTimeout(timerId);
-        remaining -= Date.now() - start;
-    };
-
-    this.resume = function() {
-        start = Date.now();
-        window.clearTimeout(timerId);
-        timerId = window.setTimeout(callback, remaining);
-    };
-
-    this.resume();
-};
-
-var timer = new Timer(function() {}, 2000);
+function sleep(milliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+      currentDate = Date.now();
+    } while (currentDate - date < milliseconds);
+  }
 
 $('body').terminal({
     // help
@@ -27,7 +16,7 @@ $('body').terminal({
         + "\nrock-on \t :3"
         + "\nreferences \t How I made this terminal"
         + "\nexit \t\t Close this terminal"
-        + "\nupdated: 3:59pm"
+        + "\nupdated: 4:04pm"
         );
     },
     // iam
@@ -66,9 +55,8 @@ $('body').terminal({
     // exit
     exit: function () {
         close();
-        timer.pause();
+        sleep(2000);
         this.echo("If you still see this line, oh well... It doesn't work sometime.");
-        timer.play();
     }
 }, {
     greetings: "Welcome to rock-on's profile! Type 'help' to view all commands."
