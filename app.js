@@ -27,7 +27,7 @@ $('body').terminal({
         + "\nrock-on \t :3"
         + "\nreferences \t How I made this terminal"
         + "\nexit \t\t Close this terminal"
-        + "\nupdated: 3:56pm"
+        + "\nupdated: 3:59pm"
         );
     },
     // iam
@@ -66,8 +66,6 @@ $('body').terminal({
     // exit
     exit: function () {
         close();
-        // timer references: https://stackoverflow.com/questions/7279567/how-do-i-stop-a-window-setinterval-in-javascript
-        var timer = $.timer(function() {}, 2000, true);
         timer.pause();
         this.echo("If you still see this line, oh well... It doesn't work sometime.");
         timer.play();
