@@ -17,7 +17,7 @@ $('body').terminal({
         + "\nrock-on \t :3"
         + "\nreferences \t How I made this terminal"
         + "\nexit \t\t Close this terminal"
-        + "\nupdated: 4:04pm"
+        + "\nupdated: 4:13pm"
         );
     },
     // iam
@@ -55,19 +55,12 @@ $('body').terminal({
     },
     // exit
     exit: function () {
-        close();
-        sleep(10);
-        sleep(10);
-        sleep(10);
-        sleep(10);
-        sleep(10);
-        sleep(10);
-        sleep(10);
-        sleep(10);
-        sleep(10);
-        sleep(10);
-        sleep(2000);
-        this.echo("If you still see this line, oh well... It doesn't work sometime.");
+        try {
+            close();
+        } catch (e) {
+            sleep(2000);
+            this.echo("If you still see this line, oh well... It doesn't work sometime.");
+        }
     }
 }, {
     greetings: "Welcome to rock-on's profile! Type 'help' to view all commands."
