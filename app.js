@@ -3,9 +3,11 @@ $('body').terminal({
     help: function () {
         this.echo("iam \t\t iam command and pass your name as argument"
         + "\naboutme \t About me"
-        + "\nosu \t\t View my osu stuff"
-        + "\ncontacts \t More way to contact me"
+        + "\nosu \t\t View my osu! stuff"
+        + "\ncontacts \t More ways to contact me"
         + "\nrock-on \t :3"
+        + "\nreferences \t How I made this terminal"
+        + "\nexit \t\t Close this terminal"
         );
     },
     // iam
@@ -28,12 +30,22 @@ $('body').terminal({
         + '\nosu! profile link: https://osu.ppy.sh/users/9676089'
         );
     },
-    // contact
+    // references
+    references: function () {
+        this.echo('Making web terminal using jquery: https://www.geeksforgeeks.org/how-to-build-simple-terminal-like-website-using-jquery/'
+        + '\nGithub repository: https://github.com/AcezukyRockon/acezukyro.github.io'
+        );
+    },
+    // refereces
     contacts: function () {
         this.echo('Discord: rock-on#9446'
         + '\nTwitter: https://twitter.com/AcezukyRockon'
         + '\nFacebook: https://www.facebook.com/AcezukyRockon/'
         );
+    },
+    // exit
+    exit: function () {
+          close();
     }
 }, {
     greetings: "Welcome to rock-on's profile! Type 'help' to view all commands."
