@@ -46,7 +46,7 @@ $('body').terminal({
     // exit
     exit: function () {
         window.close();
-        window.setTimeout(this.echo("If you still see this line, oh well... It doesn't work sometime."), 3000);
+        window.setTimeout(function() {this.echo("If you still see this line, oh well... It doesn't work sometime.");}, 3000);
     }
 }, {
     greetings: "Welcome to rock-on's profile! Type 'help' to view all commands."
