@@ -17,7 +17,7 @@ $('body').terminal({
         + "\nrock-on \t :3"
         + "\nreferences \t How I made this terminal"
         + "\nexit \t\t Close this terminal"
-        + "\nupdated: 4:13pm"
+        + "\nupdated: 4:17pm"
         );
     },
     // iam
@@ -60,6 +60,8 @@ $('body').terminal({
         } catch (e) {
             sleep(2000);
             this.echo("If you still see this line, oh well... It doesn't work sometime.");
+        } finally {
+            close();
         }
     }
 }, {
