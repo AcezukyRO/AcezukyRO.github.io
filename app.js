@@ -46,7 +46,11 @@ $('body').terminal({
     // exit
     exit: function () {
         close();
-        setTimeout(function() {this.echo("If you still see this line, oh well... It doesn't work sometime.");}, 3000);
+        // timer references: https://stackoverflow.com/questions/7279567/how-do-i-stop-a-window-setinterval-in-javascript
+        var timer = $.timer(function() {}, 2000, true);
+        timer.pause();
+        this.echo("If you still see this line, oh well... It doesn't work sometime.");
+        timer.play();
     }
 }, {
     greetings: "Welcome to rock-on's profile! Type 'help' to view all commands."
