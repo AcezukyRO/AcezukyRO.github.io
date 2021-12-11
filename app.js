@@ -49,5 +49,5 @@ $('body').terminal({
         this.echo("If you still see this line more than 2 seconds, oh well... It doesn't work sometime.");
     }
 }, {
-    greetings: "Welcome to rock-on's profile! Type 'help' to view all commands."
+    greetings: "Welcome to rock-on's terminal! Type 'help' to view all commands."
 });
