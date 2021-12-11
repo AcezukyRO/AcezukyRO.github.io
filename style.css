@@ -1,0 +1,11 @@
+.terminal,
+span,
+.cmd,
+div {
+    --color: rgb(255, 255, 255);
+}
+
+.terminal,
+span {
+    --size: 1.4;
+}
