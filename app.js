@@ -20,9 +20,7 @@ $('body').terminal({
     },
     // aboutme
     aboutme: function () {
-        this.echo('An uni student who is trying to balance between tourney staffing and study.'
-        + '\nI am also interested in games, computer stuffs and sometime in medics.'
-        );
+        this.echo('An uni student who is trying to balance between tourney staffing and study');
     },
     // osu
     osu: function () {
@@ -33,7 +31,7 @@ $('body').terminal({
     // references
     references: function () {
         this.echo('Making web terminal using jquery: https://www.geeksforgeeks.org/how-to-build-simple-terminal-like-website-using-jquery/'
-        + '\nGithub repository: https://github.com/AcezukyRockon/acezukyro.github.io'
+        + '\nGithub repository: https://github.com/AcezukyRockon/acezukyrockon.github.io'
         );
     },
     // refereces
