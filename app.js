@@ -26,7 +26,9 @@ $('body').terminal({
     osu: function () {
         this.echo('An osu! player trying to get better in all gamemode (jack of all trade)'
         + '\nosu! profile link: https://osu.ppy.sh/users/9676089'
-        + '\nA bit secret: osu!me is actually "my first webpage" I have ever created. However my first content was deleted while osu!web was updating something, on December 11th,2018.'
+        + '\nA bit secret:'
+        + '\n - osu!me is actually "my first webpage" I have ever created.'
+        + '\n - However my first content was deleted while osu!web was updating something, on December 11th,2018.'
         );
     },
     // references
